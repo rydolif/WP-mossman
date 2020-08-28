@@ -1,0 +1,555 @@
+@import "libs"
+@import "base"
+
+.header
+	padding: 7px 0
+
+	+r(992)
+		margin-bottom: 0
+		height: auto
+
+	&__logo
+
+		+r(1199)
+			margin-top: 0
+
+		+r(991)
+			margin-bottom: 10px
+
+		img
+			width: 220px
+
+			+r(1199)
+				width: 140px
+
+	&__text
+		margin-right: 0
+
+		+r(1199)
+			width: auto
+			font-size: 14px
+			margin-top: 0
+			text-align: center
+
+		+r(991)
+			width: 50%
+
+		+r(767)
+			display: none
+
+		&-phone
+			font-size: 22px
+
+			+r(1199)
+				font-size: 18px
+
+	&__time,
+	&__phone
+		position: relative
+		margin: 0
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		width: auto
+
+	&__phone
+		width: auto
+		a
+			&::after
+				display: none
+
+	&__time
+		+r(1199)
+			font-size: 14px
+
+		+r(767)
+			display: none
+
+
+.top
+
+	&__title
+		margin-bottom: 40px
+		font-size: 74px
+		color: #000000
+
+		+r(992)
+			margin-bottom: 20px
+			margin-top: 30px
+			max-width: 75%
+
+		+r(767)
+			font-size: 26px
+
+		strong
+			position: relative
+			display: inline-block
+			color: #ea0c17
+			font-weight: 500
+			font-size: 130px
+			bottom: -50px
+			line-height: 0.3
+
+			+r(1200)
+				font-size: 55px
+			
+			+r(992)
+				bottom: 0
+
+			+r(767)
+				font-size: 26px
+
+		br
+			+r(992)
+				display: none
+
+	&__subtitle
+		margin-bottom: 40px
+		max-width: 47%
+		line-height: 1.2
+		font-size: 24px
+		color: #000000
+		font-weight: 700
+
+		span
+			font-weight: 900
+
+		+r(1200)
+			margin-bottom: 15px
+
+		+r(992)
+			font-size: 14px
+
+	&__extra
+		font-size: 24px
+		color: #000000
+		font-weight: 700
+
+		+r(991)
+			font-size: 18px
+
+		+r(767)
+			font-size: 16px
+
+	&__year
+		line-height: 1.2
+		font-size: 18px
+		color: #564a43
+
+	&__orange
+		color: #ea0c17
+
+	&__free
+		font-size: 24px
+		line-height: 1.4
+
+		+r(1200)
+			margin-top: 40px
+
+		+r(991)
+			font-size: 18px
+
+		+r(767)
+			padding-left: 0
+			margin-top: 20px
+			margin-bottom: 30px
+			font-size: 16px
+
+		span
+			color: #ea0c17
+			font-size: 32px
+
+			+r(991)
+				font-size: 26px
+			
+			+r(767)
+				font-size: 20px
+
+	&__btn
+		+r(576)
+			margin-top: 0
+
+		&--wrapper
+			+r(1200)
+				margin-top: 20px
+
+
+.top__btn--active,
+.calc__button
+	background-color: #ea0c17
+
+
+.advantages__item
+	opacity: 1
+	font-weight: 700
+
+	span
+		color: #fe2739
+		font-weight: 400
+
+
+.find
+	background: #9d9d9d
+	margin-bottom: 30px
+
+	&__title
+		+r(1200)
+			margin-bottom: 30px
+			margin-top: 30px
+
+		span
+			color: #c80e1b
+
+	&__tabs--wrapper
+		background-color: #3c3c3a
+
+	&__line
+		background-color: #ea5e5d
+
+
+.models
+	background-color: #ececec
+	padding: 250px 0 350px
+
+	+r(991)
+		padding: 150px 0
+
+	+r(767)
+		padding: 100px 0
+
+	+r(480)
+		padding: 50px 0
+
+	&__download
+		color: #bf2120
+
+	&__title
+		font-size: 77px
+		margin-bottom: 0
+
+		+r(1199)
+			font-size: 70px
+
+		+r(991)
+			font-size: 56px
+
+		+r(767)
+			font-size: 40px
+
+		+r(480)
+			font-size: 32px
+		
+		&--active
+			opacity: 1
+			color: #353533
+
+	&__download--wrapper
+		right: auto
+		left: 50%
+		transform: translate(-50%, 0)
+
+		+r(1199)
+			top: 320px
+
+		+r(991)
+			position: relative
+			top: 0
+			display: flex
+			justify-content: center
+
+	&__booklet
+		top: -20%
+
+		+r(767)
+			top: -50%
+
+		+r(576)
+			left: auto
+			right: 15%
+
+		+r(480)
+			display: none
+
+
+.calc
+	padding: 50px 0 0
+
+	+r(767)
+		padding-top: 60px
+
+	&__name
+		+r(767)
+			margin-top: 0
+
+	&__title
+		color: #000000
+
+		span
+			color: #ea0c17
+
+	&__subtitle
+		font-weight: 700
+
+	&__attraction
+		margin-top: 90px
+		color: #000000
+
+		+r(991)
+			margin-top: 40px
+
+	&__sub-button
+		color: #000000
+		font-weight: 700
+
+	&__price,
+	&__golden-text
+		color: #000000
+
+	&--wrapper
+		background-color: #ea5e5d
+
+	&--checked,
+	&__item label
+		border: 5px solid #323e3a !important
+		background-color: #323e3a
+
+	&__number
+		background-color: #323e3a
+
+	&__coins
+		height: 60%
+		top: 50%
+		transform: translate(0, -50%)
+
+
+.gift
+
+	&__title
+		color: #000000
+
+		span
+			color: #d90a14
+
+
+.recommend
+	margin-top: 0
+	padding-top: 100px
+
+	&__big-text
+		color: #000000
+
+		span
+			color: #e2001a
+
+	&__img
+		display: flex
+		justify-content: flex-end
+
+		+r(991)
+			display: none
+
+		img
+			width: 140%
+
+	&__medium
+		&-text
+			font-weight: 700
+			color: #000000
+
+		&-text2
+			margin-bottom: 30px
+
+	&__small-text
+		font-size: 22px
+		color: #000000
+		font-weight: 700
+
+	&__small-text,
+	&__big-text
+		width: auto
+
+	.container
+		grid-row-gap: 0
+
+	&__line
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		p
+			font-family: "CirceLight"
+			font-size: 22px
+			font-weight: 700
+			width: 48%
+			min-width: 280px
+
+
+.section-form
+	padding: 40px 0
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-end
+
+	&__block
+		display: flex
+		flex-direction: column
+		width: 31%
+		margin-right: 2%
+
+		+r(991)
+			width: 48%
+			margin-bottom: 20px
+
+		+r(767)
+			width: 100%
+			max-width: 320px
+			margin: 0 auto 15px
+
+
+		label
+			font-size: 18px
+			font-weight: 600
+
+			+r(991)
+				font-size: 16px
+
+		input
+			height: 60px
+			line-height: 60px
+			border-radius: 60px
+			border: 1px solid #c6c6c6
+			padding: 0 20px
+			font-size: 22px
+			outline: none
+
+			+r(991)
+				width: 100%
+				margin-top: 0
+
+
+	&__btn
+		@extend .calc__button
+		color: #ffffff !important
+		// margin-top: 20px
+
+
+.contacts
+	background-color: #ea5e5d
+
+	&__title
+		margin-top: 35px
+		margin-bottom: 15px
+
+	&__text
+		margin-top: 0
+
+		&--decor
+			text-decoration: underline
+			margin-bottom: 5px
+
+	&__list
+		margin-bottom: 30px
+
+		li
+			margin-bottom: 5px
+
+			&:last-child
+				margin-bottom: 0
+
+		a
+			color: #ffffff
+
+			&:hover,
+			&:focus
+				text-decoration: underline
+				color: #ffffff
+
+	&__img
+		width: 60%
+		min-width: 380px
+		margin-bottom: 10px
+
+		img
+			width: 100%
+
+	&__social
+		margin-bottom: 20px
+
+		+r(991)
+			margin-top: 0
+
+	&__map
+
+		+r(991)
+			position: relative
+
+		&--column
+			+r(991)
+				position: relative
+				bottom: 0
+				height: 400px
+
+			+r(576)
+				height: 300px
+
+
+.footer
+
+	ul
+		+r(991)
+			margin-bottom: 20px
+
+		+r(767)
+			margin-bottom: 0
+
+	li
+
+		+r(576)
+			width: 100%
+			margin-right: 0
+			text-align: center
+
+	&__link
+		+r(1199)
+			font-size: 16px
+
+	&__privacy
+		+r(991)
+			width: 100%
+			text-align: center
+
+
+.modal
+	&-consultation
+		&__title span
+			color: #ea0c17
+
+		&__text .modal__orange
+			color: #ea0c17 !important
+
+		&__button
+			background-color: #ea0c17
+
+		&__images
+			justify-content: flex-start
+
+		&__image
+			width: 30%
+			margin-right: 3%
+
+		&__subtitle span
+			color: #ea0c17
+
+	&-free
+
+		&__form
+			margin: 0 auto
+
+
+
+
+
+@import "page"

@@ -1,0 +1,93 @@
+form
+
+input, textarea, select
+	+transition
+	width: 100%
+	border: 3px solid transparent
+	outline: none
+	box-shadow: none
+	// -webkit-appearance: none
+	height: 40px
+	border-radius: 20px
+
+	&:focus:required:invalid
+		border-color: red
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&:required:valid
+		border-color: green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&::placeholder
+		color: #c4c4c4
+		line-height: 40px
+
+input[type='number']
+	-moz-appearance:textfield
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+
+
+button
+	cursor: pointer
+
+input, select
+	height: 40px
+	line-height: 40px
+	padding: 0 30px
+
+	&::placeholder
+		line-height: 40px
+
+textarea
+	height: 170px
+	resize: none
+	padding: 10px 25px
+
+	&::placeholder
+		line-height: 1.4
+
+label
+	margin-bottom: 0
+
+.wpcf7-not-valid-tip
+	position: absolute
+	bottom: -25px
+	right: 25px
+	left: 25px
+	transition: all .3s
+	animation: error .3s linear 1 forwards
+	color: #fff
+	text-align: center
+	font-weight: 600
+	background-color: red
+	border-radius: 10px
+	z-index: 1
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -4px
+		transform: translate(-50%, -50%)
+		border-bottom: 4px solid red
+		border-left: 4px solid transparent
+		border-right: 4px solid transparent
+		border-top: 4px solid transparent
+
+
+.wpcf7-response-output
+	position: absolute
+	top: 100%
+	right: 0
+	left: 0
+	background-color: #ffffff
+	border-color: $color--red
+	margin: 0 auto !important

@@ -1,0 +1,4 @@
+
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div>
