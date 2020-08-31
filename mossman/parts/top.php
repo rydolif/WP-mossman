@@ -15,7 +15,7 @@
 								<?php the_field('hero_guarantee'); ?>
 							</p>
 							<a href="#calc" class="top__btn--wrapper">
-									<button class="top__btn" onclick="yaCounter28420846.reachGoal('calc'); return true;">
+									<button class="top__btn" >
 										<?php the_field('hero_btn'); ?>
 									</button>
 							</a>

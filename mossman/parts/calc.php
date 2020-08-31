@@ -287,7 +287,7 @@
 				<p class="calc__attraction">
 					<?php the_field('calc__attraction'); ?>
 				</p>
-				<button class="calc__button" onclick="yaCounter28420846.reachGoal('hochu_click'); return true;">
+				<button class="calc__button" >
 					<?php the_field('calc__btn'); ?>
 				</button>
 				<p class="calc__sub-button">

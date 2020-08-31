@@ -7,7 +7,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/roistat/roistat.php';//ROISTAT
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use SimpleHtmlToText\Parser;
-$to = "bodya.lushpa@gmail.com, info@kuhnicity.ru, control.zayavok@yandex.ru";
+$to = "rudolifrudolif@gmail.com";
+// $to = "rudolifrudolif@gmail.com, bodya.lushpa@gmail.com, info@kuhnicity.ru, control.zayavok@yandex.ru";
 
 $headers  = "Content-type: text/html; charset=utf-8 \r\n";
 $headers .= "From: <robot@kuhnicity.ru>\r\n";

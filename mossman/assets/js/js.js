@@ -457,27 +457,42 @@ $(document).ready(function(){
 
       count=+$(".calc__number").val();
 
-      if($("#calc11").is(":checked")){
-        count = count * 14788;
+      if($("#calc1").is(":checked")){
+        count = count * 73475;
       }
-      else if ($("#calc12").is(":checked")){
-        count = count * 7485 ;
+      else if ($("#calc2").is(":checked")){
+        count = count * 36565 ;
       }
-      else if ($("#calc13").is(":checked")){
-        count = count * 23502;
+      else if ($("#calc3").is(":checked")){
+        count = count * 52129;
       }
-      else if ($("#calc14").is(":checked")){
-        count = count * 2612;
+      else if ($("#calc4").is(":checked")){
+        count = count * 37104;
       }
-      else if ($("#calc15").is(":checked")){
-        count = count * 56637;
+      else if ($("#calc5").is(":checked")){
+        count = count * 52710;
+      }
+      else if ($("#calc6").is(":checked")){
+        count = count * 37104;
+      }
+      else if ($("#calc7").is(":checked")){
+        count = count * 35142;
+      }
+      else if ($("#calc8").is(":checked")){
+        count = count * 40541;
+      }
+      else if ($("#calc9").is(":checked")){
+        count = count * 36012;
+      }
+      else if ($("#calc10").is(":checked")){
+        count = count * 42947;
       }
       else{
         count = 0;
       }
 
       if($(".calc__radio1").is(":checked")){
-        count= +count - (count*0.1);
+        // count= +count - (count*0.1);
         
       }
       count = Math.trunc(count);
@@ -504,23 +519,35 @@ $(document).ready(function(){
       var count = 0;
       count=+$(".calc__number").val();
       console.log(count);
-      if($("#calc11").is(":checked")){
-        count = count * 14788;
+      if($("#calc1").is(":checked")){
+        count = count * 73475;
       }
-      else if ($("#calc12").is(":checked")){
-        count = count * 7485 ;
+      else if ($("#calc2").is(":checked")){
+        count = count * 36565;
       }
-      else if ($("#calc13").is(":checked")){
-        count = count * 23502;
+      else if ($("#calc3").is(":checked")){
+        count = count * 52129;
       }
-      else if ($("#calc14").is(":checked")){
-        count = count * 2612;
+      else if ($("#calc4").is(":checked")){
+        count = count * 37104;
       }
-      else if ($("#calc15").is(":checked")){
-        count = count * 56637;
+      else if ($("#calc5").is(":checked")){
+        count = count * 52710;
       }
-      else if ($("#calc16").is(":checked")){
-        count = count * 4800;
+      else if ($("#calc6").is(":checked")){
+        count = count * 37104;
+      }
+      else if ($("#calc7").is(":checked")){
+        count = count * 35142;
+      }
+      else if ($("#calc8").is(":checked")){
+        count = count * 40541;
+      }
+      else if ($("#calc9").is(":checked")){
+        count = count * 36012;
+      }
+      else if ($("#calc108").is(":checked")){
+        count = count * 42947;
       }
       else{
         count = 0;
