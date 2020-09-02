@@ -2826,7 +2826,7 @@ input[type="number"] {
     max-width: 1366px;
   }
 }
-@media (max-width: 1366px) {
+@media (max-width: 1365px) {
   .header__nav ul li a {
     margin-left: 25px;
   }

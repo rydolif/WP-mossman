@@ -35,7 +35,7 @@
 				<br>
 				Например, сможем <span class="modal__orange">просчитать стоимость вашей кухни с точностью 100% </span>  или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
 			</p>
-			<form class="modal-consultation__form modal-consultation__form2">
+			<form class="modal-consultation__form modal-consultation__form2 form">
 				<input type="hidden" name="vidform" value="бесплатная консультация">
 				<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
 				<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
@@ -96,7 +96,7 @@
 			</div>
 			<div class="col-lg-6 relative">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-catalog.png" alt="" class="modal-download__catalog">
-					<form class="modal-download__form modal-download__form2">
+					<form class="modal-download__form modal-download__form2 form">
 							<input type="hidden" name="vidform" value="скачать каталог">
 							<input type="hidden" name="formname" value="Скачать каталог"><!-- ROISTAT --> 
 							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
@@ -192,7 +192,7 @@
 					откроется сразу после нажатия на кнопку «Забираю все бесплатно»
 				</p>
 			</div>
-			<form class="modal-consultation__form modal-free__form">
+			<form class="modal-consultation__form modal-free__form form">
 				<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
 					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
 					<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
@@ -252,7 +252,7 @@
 									на кнопку.</span>
 							</p>
 					</div>
-					<form class="modal-consultation__form modal-order__form">
+					<form class="modal-consultation__form modal-order__form form">
 							<input type="hidden" name="vidform" value="инженерная экспертиза">
 							<input type="hidden" name="formname" value="Инженерная экспертиза"><!-- ROISTAT -->
 							<input type="tel" class="modal-consultation__input modal-order__input modal__phone" id="order__phone" name="phone" placeholder="+7 (___) ___ __ __" required>
@@ -311,7 +311,7 @@
 							Листайте с удовольствием <br>
 								на компьютере или телефоне.
 					</p>
-					<form class="modal-download__form modal-exit__form">
+					<form class="modal-download__form modal-exit__form form">
 							<input type="hidden" name="vidform" value="окно ухода с сайта">
 							<input type="hidden" name="formname" value="Останьтесь на минутку"><!-- ROISTAT -->
 							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>

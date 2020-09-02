@@ -123,14 +123,3 @@ require get_template_directory() . '/includes/acf.php';
  */
 require get_template_directory() . '/includes/post-type.php';
 
-
-//------------------чистка від лишнього ----------------------
-	remove_action('wp_head','feed_links_extra', 3); // убирает ссылки на rss категорий
-	remove_action('wp_head','feed_links', 2); // минус ссылки на основной rss и комментарии
-	remove_action('wp_head','rsd_link');  // сервис Really Simple Discovery
-	remove_action('wp_head','wlwmanifest_link'); // Windows Live Writer
-	function theme_name_scripts() {
-			wp_enqueue_script( 'jquery' );
-	}
-	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
-	

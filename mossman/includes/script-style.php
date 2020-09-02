@@ -12,13 +12,18 @@
     
     //---------------js---------------------
     wp_enqueue_script( 'sctipt_fa-all', get_template_directory_uri() . '/assets/js/fa-all.min.js', array(), '', true );
-    wp_enqueue_script( 'sctipt_jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.0.min.js', array(), '', true );
+    // wp_enqueue_script( 'sctipt_jquery', get_template_directory_uri() . '/assets/libs/jquery/dist/jquery.min.js', array(), '', true );
     wp_enqueue_script( 'sctipt_slick', get_template_directory_uri() . '/assets/js/slick.js', array(), '', true );
     wp_enqueue_script( 'sctipt_fancybox', get_template_directory_uri() . '/assets/js/jquery.fancybox.js', array(), '', true );
     wp_enqueue_script( 'sctipt_maskedinput', get_template_directory_uri() . '/assets/js/jquery.maskedinput.js', array(), '', true );
     wp_enqueue_script( 'sctipt_bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '', true );
     wp_enqueue_script( 'sctipt_js', get_template_directory_uri() . '/assets/js/js.js', array(), '', true );
-    wp_enqueue_script( 'sctipt_form', get_template_directory_uri() . '/assets/js/form.js', array(), '', true );
+    // wp_enqueue_script( 'sctipt_form', get_template_directory_uri() . '/assets/js/form.js', array(), '', true );
+
+    //--------------libs-js---------------------
+    // wp_enqueue_script( 'sctipt_validate', get_template_directory_uri() . '/assets/libs/jquery.validate.js', array(), '', true );
+    // wp_enqueue_script( 'sctipt_popupoverlay', get_template_directory_uri() . '/assets/libs/jquery.popupoverlay.js', array(), '', true );
+    wp_enqueue_script( 'sctipt_mask', get_template_directory_uri() . '/assets/libs/jquery.mask.min.js', array(), '', true );
     
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
       wp_enqueue_script( 'comment-reply' );
@@ -26,25 +31,15 @@
   }
   add_action( 'wp_enqueue_scripts', 'ewa_scripts' );
 
-//------------------add custom js ----------------------
-
-//------------------add cdn js ----------------------
-  // add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-  // function my_scripts_method(){
-  //   wp_enqueue_script( 'newscript',  'https://app.comagic.ru/static/cs.min.js');
+//------------------чистка від лишнього ----------------------
+  remove_action('wp_head','feed_links_extra', 3); // убирает ссылки на rss категорий
+  remove_action('wp_head','feed_links', 2); // минус ссылки на основной rss и комментарии
+  remove_action('wp_head','rsd_link');  // сервис Really Simple Discovery
+  remove_action('wp_head','wlwmanifest_link'); // Windows Live Writer
+  // function theme_name_scripts() {
+  //     wp_enqueue_script( 'jquery' );
   // }
-
-
-  
-
-//------------------подключение шрифтов------------------
-  //  function wph_add_google_fonts() {
-  //      if ( !is_admin() ) {
-  //          wp_register_style('Philosopher', 'https://fonts.googleapis.com/css?family=Neucha|Philosopher:400,400i,700,700i&display=swap&subset=cyrillic&display=swap', array(), null, 'all');
-  //          wp_enqueue_style('Philosopher');
-  //      }
-  //  }
-  //  add_action('wp_enqueue_scripts', 'wph_add_google_fonts');
+  // add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
 
 //------------------підключення додаткових функцій для постов ----------------------

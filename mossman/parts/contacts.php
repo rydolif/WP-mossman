@@ -37,7 +37,7 @@
 							<i class="fab fa-instagram-square"></i>
 						</a>
 					</div>
-					<div class="contacts__icon ">
+					<div class="contacts__icon">
 						<a href="<?php the_field('facebook', 'option'); ?>" target="_blank">
 							<i class="fab fa-facebook-square"></i>
 						</a>

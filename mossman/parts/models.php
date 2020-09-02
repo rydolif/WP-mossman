@@ -10,7 +10,6 @@
 			<div class="col-lg-12 relative">
 				<h3 class="models__title">
 					<?php the_field('models__title'); ?>
-					
 				</h3>
 				<a href="<?php the_field('models__btn_link'); ?>" class="models__download--wrapper d-flex" download>
 					<div class="models__icon">
