@@ -11,18 +11,18 @@
     wp_enqueue_style( 'style_style', get_template_directory_uri() . '/assets/css/main.min.css' );
     
     //---------------js---------------------
+    wp_enqueue_script( 'sctipt_jquery', get_template_directory_uri() . '/assets/libs/jquery/dist/jquery.min.js', array(), '', true );
     wp_enqueue_script( 'sctipt_fa-all', get_template_directory_uri() . '/assets/js/fa-all.min.js', array(), '', true );
-    // wp_enqueue_script( 'sctipt_jquery', get_template_directory_uri() . '/assets/libs/jquery/dist/jquery.min.js', array(), '', true );
     wp_enqueue_script( 'sctipt_slick', get_template_directory_uri() . '/assets/js/slick.js', array(), '', true );
     wp_enqueue_script( 'sctipt_fancybox', get_template_directory_uri() . '/assets/js/jquery.fancybox.js', array(), '', true );
     wp_enqueue_script( 'sctipt_maskedinput', get_template_directory_uri() . '/assets/js/jquery.maskedinput.js', array(), '', true );
     wp_enqueue_script( 'sctipt_bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '', true );
     wp_enqueue_script( 'sctipt_js', get_template_directory_uri() . '/assets/js/js.js', array(), '', true );
-    // wp_enqueue_script( 'sctipt_form', get_template_directory_uri() . '/assets/js/form.js', array(), '', true );
+    wp_enqueue_script( 'sctipt_form', get_template_directory_uri() . '/assets/js/form.js', array(), '', true );
 
     //--------------libs-js---------------------
-    // wp_enqueue_script( 'sctipt_validate', get_template_directory_uri() . '/assets/libs/jquery.validate.js', array(), '', true );
-    // wp_enqueue_script( 'sctipt_popupoverlay', get_template_directory_uri() . '/assets/libs/jquery.popupoverlay.js', array(), '', true );
+    wp_enqueue_script( 'sctipt_validate', get_template_directory_uri() . '/assets/libs/jquery.validate.js', array(), '', true );
+    wp_enqueue_script( 'sctipt_popupoverlay', get_template_directory_uri() . '/assets/libs/jquery.popupoverlay.js', array(), '', true );
     wp_enqueue_script( 'sctipt_mask', get_template_directory_uri() . '/assets/libs/jquery.mask.min.js', array(), '', true );
     
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

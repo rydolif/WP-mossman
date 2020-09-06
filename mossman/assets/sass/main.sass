@@ -391,10 +391,18 @@
 .section-form
 	padding: 40px 0
 
-	&__container
+	.wpcf7-form
 		display: flex
 		flex-wrap: wrap
 		align-items: flex-end
+
+	input
+		width: 100%
+
+	div.wpcf7 .ajax-loader
+		position: absolute
+		bottom: -10px
+		left: 0
 
 	&__block
 		display: flex
@@ -561,6 +569,15 @@
 
 .modal-download__btn
 	background-color: #fe2739
+
+
+input[type='number']
+	appearance: auto
+
+
+ul
+	list-style-type: none
+
 
 
 @import "page"

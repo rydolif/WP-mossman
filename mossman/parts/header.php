@@ -1,4 +1,6 @@
 
+<a name="main"></a>
+
 <header class="header">
 	<div class="container header__container--big">
 			<div class="row align-items-center">
