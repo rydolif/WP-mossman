@@ -122,4 +122,3 @@ require get_template_directory() . '/includes/acf.php';
  * Post-Type
  */
 require get_template_directory() . '/includes/post-type.php';
-

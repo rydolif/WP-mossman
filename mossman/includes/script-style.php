@@ -22,7 +22,7 @@
 
     //--------------libs-js---------------------
     wp_enqueue_script( 'sctipt_validate', get_template_directory_uri() . '/assets/libs/jquery.validate.js', array(), '', true );
-    wp_enqueue_script( 'sctipt_popupoverlay', get_template_directory_uri() . '/assets/libs/jquery.popupoverlay.js', array(), '', true );
+    // wp_enqueue_script( 'sctipt_popupoverlay', get_template_directory_uri() . '/assets/libs/jquery.popupoverlay.js', array(), '', true );
     wp_enqueue_script( 'sctipt_mask', get_template_directory_uri() . '/assets/libs/jquery.mask.min.js', array(), '', true );
     
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -36,10 +36,13 @@
   remove_action('wp_head','feed_links', 2); // минус ссылки на основной rss и комментарии
   remove_action('wp_head','rsd_link');  // сервис Really Simple Discovery
   remove_action('wp_head','wlwmanifest_link'); // Windows Live Writer
-  // function theme_name_scripts() {
-  //     wp_enqueue_script( 'jquery' );
-  // }
-  // add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+  remove_action('wp_head','wp_generator');  // скрыть версию wordpress
+  function modify_jquery() {
+        if (!is_admin()) {
+      wp_deregister_script('jquery');
+        }
+  }
+  add_action('init', 'modify_jquery');
 
 
 //------------------підключення додаткових функцій для постов ----------------------
@@ -63,3 +66,4 @@
       }
   </style>';
   }
+  

@@ -205,10 +205,10 @@
 					</div>
 					<div class="calc__items--wrapper">
 							<p class="calc__name">
-									Укажите длинну, м
+									Укажите длину, м
 							</p>
 							<div class="calc__number--wrapper">
-									<input type="number" max="3" min="0" class="calc__number" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+									<input type="number" max="3" min="1" value="0" class="calc__number" >
 							</div>
 					</div>
 					<div class="calc__items--wrapper">

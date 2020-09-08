@@ -13,12 +13,11 @@
 					<ul class="contacts__list">
 					<?php while( have_rows('contacts__list') ): the_row(); 
 						$adress = get_sub_field('adress');
-						$i++;
 					?>
 
-					<li><a href="#tabs__<?php echo $i; ?>"><?php echo $adress; ?></a></li>
+					<li><?php echo $adress; ?></li>
 
-					<?php endwhile; $i = 0; ?>
+					<?php endwhile;?>
 					</ul>
 				<?php endif; ?>
 
@@ -47,17 +46,8 @@
 
 			<div class="col-lg-6 contacts__map--column">
 
-				<?php if( have_rows('contacts__list') ): ?>
-					<?php while( have_rows('contacts__list') ): the_row(); 
-						$iframe = get_sub_field('iframe');
-						$i++;
-					?>
+				<div id="tabs__<?php echo $i; ?>" class="tabs__wrap contacts__map"><?php the_field('contacts__map'); ?></div>
 
-					<div id="tabs__<?php echo $i; ?>" class="tabs__wrap contacts__map"><?php echo $iframe; ?></div>
-
-					<?php endwhile; ?>
-				<?php endif; ?>
-					
 			</div>
 
 		</div>

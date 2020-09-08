@@ -24,7 +24,7 @@
 									</a>
 							</p>
 							<p class="header__phone header__consultation">
-									<a href="#" >
+									<a href="#" class="modal-consultation_open">
 											<?php the_field('header_consultation_text', 'option'); ?>
 									</a>
 							</p>

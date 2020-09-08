@@ -36,6 +36,15 @@
 				Например, сможем <span class="modal__orange">просчитать стоимость вашей кухни с точностью 100% </span>  или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
 			</p>
 			<form class="modal-consultation__form modal-consultation__form2 form">
+
+				<input type="hidden" name="themes" value="Заявка на консультацию с лендинга landing. mossman-kuhni.ru">
+
+				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+				<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+				<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+				<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
 				<input type="hidden" name="vidform" value="бесплатная консультация">
 				<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
 				<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
@@ -97,6 +106,14 @@
 			<div class="col-lg-6 relative">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-catalog.png" alt="" class="modal-download__catalog">
 					<form class="modal-download__form modal-download__form2 form">
+
+						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+						<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+						<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+						<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+						<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+
 							<input type="hidden" name="vidform" value="скачать каталог">
 							<input type="hidden" name="formname" value="Скачать каталог"><!-- ROISTAT --> 
 							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
@@ -193,12 +210,19 @@
 				</p>
 			</div>
 			<form class="modal-consultation__form modal-free__form form">
-				<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
+
+			<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+			<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+			<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+			<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+			<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
 					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
 					<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
 					<div class="modal__agreement modal-consultation__agreement">
-						<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
-						;	<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check">  
+						<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
+						;	<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check">  
 						</label>
 						<p>
 							Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
@@ -312,6 +336,13 @@
 								на компьютере или телефоне.
 					</p>
 					<form class="modal-download__form modal-exit__form form">
+					<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+					<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+
 							<input type="hidden" name="vidform" value="окно ухода с сайта">
 							<input type="hidden" name="formname" value="Останьтесь на минутку"><!-- ROISTAT -->
 							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
@@ -342,7 +373,7 @@
 
 <div class="modal-redirect--wrapper" id="modal-redirect1">
 	<div class="modal-redirect relative">
-			<div class="modal-consultation__close modal-download__close" id="modal-redirect1__close">
+			<div class="modal-consultation__close modal-download__close " id="modal-redirect1__close">
 					<i class="fas fa-times-circle"></i>
 			</div>
 			<p class="modal-redirect__middle-text">
@@ -356,7 +387,7 @@
 			<p class="modal-redirect__small-text">
 					Через 5 секунд вы автоматически будете перенаправлены на наш специальный раздел с уже 
 					выполненными проектами. <br>
-					<a href="https://mossman-kuhni.ru/projects">mossman-kuhni.ru/projects</a> <br>
+					<a href="https://mossman-kuhni.ru/projects">www.mossman-kuhni.ru/projects</a> <br>
 					<br>
 					Хорошего дня!
 			</p>
@@ -378,7 +409,7 @@
 			</p>
 			<p class="modal-redirect__small-text">
 					А пока полистайте  этот сайт или специальный раздел с уже выполненными проектами. <br>
-					<a href="https://www.kuhnicity.ru/portfolio/">www.kuhnicity.ru/portfolio</a> <br>
+					<a href="https://mossman-kuhni.ru/projects">www.www.mossman-kuhni.ru/projects</a> <br>
 					<br>
 					Хорошего дня!
 			</p>
@@ -401,7 +432,7 @@
 			</p>
 			<p class="modal-redirect__small-text">
 					Через 5 секунд вы автоматически будете перенаправлены на наш специальный раздел с уже выполненными проектами. <br>
-					<a href="https://www.kuhnicity.ru/portfolio/">www.kuhnicity.ru/portfolio</a> <br>
+					<a href="https://mossman-kuhni.ru/projects">www.www.mossman-kuhni.ru/projects</a> <br>
 					<br>
 					Хорошего дня!
 			</p>

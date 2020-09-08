@@ -325,6 +325,11 @@
 		top: 50%
 		transform: translate(0, -50%)
 
+		+r(576)
+			height: 200px
+			z-index: -1
+			top: 83%
+
 
 .gift
 
@@ -384,12 +389,22 @@
 			font-family: "CirceLight"
 			font-size: 22px
 			font-weight: 700
-			width: 48%
 			min-width: 280px
+			width: 42%
+
+			&:nth-child(1)
+				width: 55%
+
 
 
 .section-form
 	padding: 40px 0
+
+	&__container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: flex-end
 
 	.wpcf7-form
 		display: flex
@@ -405,6 +420,7 @@
 		left: 0
 
 	&__block
+		position: relative
 		display: flex
 		flex-direction: column
 		width: 31%
@@ -440,11 +456,12 @@
 				width: 100%
 				margin-top: 0
 
-
 	&__btn
 		@extend .calc__button
 		color: #ffffff !important
-		// margin-top: 20px
+		height: 60px
+		border-radius: 60px
+		border: 0
 
 
 .contacts
@@ -463,6 +480,7 @@
 
 	&__list
 		margin-bottom: 30px
+		color: #ffffff
 
 		li
 			margin-bottom: 5px
@@ -579,5 +597,29 @@ ul
 	list-style-type: none
 
 
+label.error
+	position: absolute
+	bottom: -25px
+	right: 25px
+	left: 25px
+	transition: all .3s
+	animation: error .3s linear 1 forwards
+	color: #fff
+	text-align: center
+	font-weight: 600
+	background-color: red
+	border-radius: 10px
+	z-index: 1
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -4px
+		transform: translate(-50%, -50%)
+		border-bottom: 4px solid red
+		border-left: 4px solid transparent
+		border-right: 4px solid transparent
+		border-top: 4px solid transparent
 
 @import "page"

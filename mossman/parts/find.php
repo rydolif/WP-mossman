@@ -50,7 +50,7 @@
 
 			<div class="find__slider">
 				<div class="find__sub-slide">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider1_item45.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Baccarat.jpg" alt="">
 					<div class="find__grid--wrapper">
 						<div class="find__text--grid">
 							<p class="find__text-item find__text-item--faded">
