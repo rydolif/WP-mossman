@@ -785,7 +785,7 @@ $(document).ready(function(){
   //   setTimeout(
   //     function()
   //     {
-  //      window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+  //      window.open('https://www.mossman-kuhni.ru/projects/', '_blank');
   //     }, 5000)
   // });
 
@@ -805,7 +805,7 @@ $(document).ready(function(){
   //   setTimeout(
   //     function()
   //     {
-  //      window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+  //      window.open('https://www.mossman-kuhni.ru/projects/', '_blank');
   //     }, 5000)
   // });
 
@@ -825,7 +825,7 @@ $(document).ready(function(){
   //   setTimeout(
   //     function()
   //     {
-  //      window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+  //      window.open('https://www.mossman-kuhni.ru/projects/', '_blank');
   //     }, 5000)
   // });
 
@@ -845,7 +845,7 @@ $(document).ready(function(){
     setTimeout(
       function()
       {
-       window.open('www.kuhnicity.ru/portfolio', '_blank');
+       window.open('www.mossman-kuhni.ru/projects', '_blank');
       }, 5000)
   });
 
@@ -1103,16 +1103,27 @@ $('#review3')
       },
       submitHandler: function(form) {
         var t = {
-          themes: jQuery('.form-' + index).find("input[name=themes]").val(),
+          subject: jQuery('.form-' + index).find("input[name=subject]").val(),
+          
+          email: jQuery('.form-' + index).find("input[name=email]").val(),
           name: jQuery('.form-' + index).find("input[name=name]").val(),
           phone: jQuery('.form-' + index).find("input[name=phone]").val(),
+          description: jQuery('.form-' + index).find("input[name=description]").val(),
+
+          style: jQuery('.form-' + index).find("input[name=style]").val(),
+          material: jQuery('.form-' + index).find("input[name=material]").val(),
+          type: jQuery('.form-' + index).find("input[name=type]").val(),
+          tech: jQuery('.form-' + index).find("input[name=tech]").val(),
+          number: jQuery('.form-' + index).find("input[name=number]").val(),
+          calc_result: jQuery('.form-' + index).find("input[name=calc_result]").val(),
+
           utm_source: jQuery('.form-' + index).find("input[name=utm_source]").val(),
           utm_medium: jQuery('.form-' + index).find("input[name=utm_medium]").val(),
           utm_campaign: jQuery('.form-' + index).find("input[name=utm_campaign]").val(),
           utm_term: jQuery('.form-' + index).find("input[name=utm_term]").val(),
           utm_content: jQuery('.form-' + index).find("input[name=utm_content]").val(),
         };
-        ajaxSend('.form-' + index, t);
+        // ajaxSend('.form-' + index, t);
       }
     });
 
@@ -1128,9 +1139,6 @@ $('#review3')
 
         $('body').addClass('overflow-hidden');
         $('html').addClass('overflow-hidden');
-        setTimeout( function() {
-          window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
-        }, 5000)
 
         setTimeout(function() {
           $(formName).trigger('reset');

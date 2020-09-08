@@ -11,7 +11,7 @@ $('form.modal-consultation__form2').submit(function (e) {
       setTimeout(
         function()
         {
-         window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+         window.open('https://mossman-kuhni.ru/projects', '_blank');
         }, 5000)
   });
 });
@@ -29,7 +29,7 @@ $('form.modal-order__form').submit(function (e) {
     setTimeout(
         function()
         {
-          window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+          window.open('https://mossman-kuhni.ru/projects', '_blank');
         }, 5000)
   });
 });
@@ -83,7 +83,7 @@ $('form.modal-free__form').submit(function (e) {
     setTimeout(
         function()
         {
-          window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+          window.open('https://mossman-kuhni.ru/projects', '_blank');
         }, 5000)
   });
 });
