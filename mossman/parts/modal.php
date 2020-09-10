@@ -63,80 +63,80 @@
 </div>
 <!-- Консультация конец -->
 
+<!-- на почту заказчика -->
 <div class="modal-download relative" id="modal-download">
 	<div class="modal modal-download__window">
-			<div class="modal-consultation__close modal-download__close" id="modal-download__close">
-					<i class="fas fa-times-circle"></i>
-					<p class="modal__closetext">
-							<span>Я не хочу </span> найти свою идеальную кухню.
-					</p>
-			</div>
-			<div class="col-12 modal__dont--col">
-					<p class="modal__dont">
-							<span>Я не хочу </span> найти свою<br>
-							идеальную кухню
-					</p>
-			</div>
-			<div class="col-lg-6">
-					<h2 class="modal-consultation__title">
-							Бесплатно <br>
-							<span>скачайте</span>
-							<br>
-							130 моделей <br>
-							кухонь
-					</h2>
-					<p class="modal-consultation__subtitle modal-download__subtitle">
-							и найдите среди них свою  — идеальную! 
-					</p>
-					<p class="modal-consultation__text">
-							Получите каталог на почту <br>
-							<br>
-							<br>
-							Листайте с удовольствием на <br>
-							компьютере или телефоне.
-					</p>
-					<div class="modal__agreement modal-consultation__agreement modal-download__agreement">
-							<label for="modal-download__check " class="modal-consultation__check--label modal-consultation__check--active">
-									<input type="checkbox" checked="checked" id="modal-download__check" class="modal-consultation__check">  
-							</label>
-							<p>
-									Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
-							</p>
-					</div>
-			</div>
-			<div class="col-lg-6 relative">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-catalog.png" alt="" class="modal-download__catalog">
-					<form class="modal-download__form modal-download__form2 form">
+		<div class="modal-consultation__close modal-download__close" id="modal-download__close">
+				<i class="fas fa-times-circle"></i>
+				<p class="modal__closetext">
+						<span>Я не хочу </span> найти свою идеальную кухню.
+				</p>
+		</div>
+		<div class="col-12 modal__dont--col">
+				<p class="modal__dont">
+						<span>Я не хочу </span> найти свою<br>
+						идеальную кухню
+				</p>
+		</div>
+		<div class="col-lg-6">
+				<h2 class="modal-consultation__title">
+						Бесплатно <br>
+						<span>скачайте</span>
+						<br>
+						130 моделей <br>
+						кухонь
+				</h2>
+				<p class="modal-consultation__subtitle modal-download__subtitle">
+						и найдите среди них свою  — идеальную! 
+				</p>
+				<p class="modal-consultation__text">
+						Получите каталог на почту <br>
+						<br>
+						<br>
+						Листайте с удовольствием на <br>
+						компьютере или телефоне.
+				</p>
+				<div class="modal__agreement modal-consultation__agreement modal-download__agreement">
+						<label for="modal-download__check " class="modal-consultation__check--label modal-consultation__check--active">
+								<input type="checkbox" checked="checked" id="modal-download__check" class="modal-consultation__check">  
+						</label>
+						<p>
+								Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
+						</p>
+				</div>
+		</div>
+		<div class="col-lg-6 relative">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-catalog.png" alt="" class="modal-download__catalog">
+			<form class="modal-download__form modal-download__form2 form" enctype="multipart/form-data">
 
-						<input type="hidden" name="subject" value="Заявка на консультацию с лендинга landing. mossman-kuhni.ru">
+				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга landing. mossman-kuhni.ru">
 
-						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
-						<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
-						<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
-						<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
-						<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+				<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+				<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+				<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
 
-
-							<input type="hidden" name="vidform" value="скачать каталог">
-							<input type="hidden" name="formname" value="Скачать каталог"><!-- ROISTAT --> 
-							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
-							<input type="submit" class="modal-download__btn" id="modal-download__btn" value="Получить на почту">
-					</form> 
-					<div class="modal-download__social">
-							<a href="#" class="modal-download__viber">
-									<i class="fab fa-viber"></i>
-							</a>
-							<a href="#" class="modal-download__whatsapp">
-									<i class="fab fa-whatsapp-square"></i>
-							</a>
-							<a href="#" class="modal-download__telegramm">
-									<i class="fab fa-telegram-plane "></i>
-							</a>
-					</div>
+				<input type="hidden" name="vidform" value="скачать каталог">
+				<input type="hidden" name="formname" value="Скачать каталог"><!-- ROISTAT --> 
+				<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
+				<input type="submit" class="modal-download__btn" id="modal-download__btn" value="Получить на почту">
+			</form> 
+			<div class="modal-download__social">
+					<a href="#" class="modal-download__viber">
+							<i class="fab fa-viber"></i>
+					</a>
+					<a href="#" class="modal-download__whatsapp">
+							<i class="fab fa-whatsapp-square"></i>
+					</a>
+					<a href="#" class="modal-download__telegramm">
+							<i class="fab fa-telegram-plane "></i>
+					</a>
 			</div>
+		</div>
 	</div>
 </div>
-
+<!-- на почту заказчика конец -->
 
 <!-- Калькулятор -->
 <div class="modal-consultation modal-free " id="modal-free">

@@ -1123,29 +1123,29 @@ $('#review3')
           utm_term: jQuery('.form-' + index).find("input[name=utm_term]").val(),
           utm_content: jQuery('.form-' + index).find("input[name=utm_content]").val(),
         };
-        ajaxSend('.form-' + index, t);
+        // ajaxSend('.form-' + index, t);
       }
     });
 
   });
 
-  function ajaxSend(formName, data) {
-    jQuery.ajax({
-      type: "POST",
-      url: "wp-content/themes/mossman/sendmail.php",
-      data: data,
-      success: function() {
-        $('#modal-redirect1').show();
+  // function ajaxSend(formName, data) {
+  //   jQuery.ajax({
+  //     type: "POST",
+  //     url: "wp-content/themes/mossman/sendmail.php",
+  //     data: data,
+  //     success: function() {
+  //       $('#modal-redirect1').show();
 
-        $('body').addClass('overflow-hidden');
-        $('html').addClass('overflow-hidden');
+  //       $('body').addClass('overflow-hidden');
+  //       $('html').addClass('overflow-hidden');
 
-        setTimeout(function() {
-          $(formName).trigger('reset');
-        }, 2000);
-      }
-    });
-  }
+  //       setTimeout(function() {
+  //         $(formName).trigger('reset');
+  //       }, 2000);
+  //     }
+  //   });
+  // }
 
 
 });
