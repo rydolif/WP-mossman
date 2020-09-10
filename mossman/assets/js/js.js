@@ -1123,29 +1123,30 @@ $('#review3')
           utm_term: jQuery('.form-' + index).find("input[name=utm_term]").val(),
           utm_content: jQuery('.form-' + index).find("input[name=utm_content]").val(),
         };
-        // ajaxSend('.form-' + index, t);
+        ajaxSend('.form-' + index, t);
       }
     });
 
   });
 
-  // function ajaxSend(formName, data) {
-  //   jQuery.ajax({
-  //     type: "POST",
-  //     url: "wp-content/themes/mossman/sendmail.php",
-  //     data: data,
-  //     success: function() {
-  //       $('#modal-redirect1').show();
-
-  //       $('body').addClass('overflow-hidden');
-  //       $('html').addClass('overflow-hidden');
-
-  //       setTimeout(function() {
-  //         $(formName).trigger('reset');
-  //       }, 2000);
-  //     }
-  //   });
-  // }
+  function ajaxSend(formName, data) {
+    jQuery.ajax({
+      type: "POST",
+      url: "wp-content/themes/mossman/sendmail.php",
+      data: data,
+      success: function() {
+        $('#modal-consultation, #modal-order, #modal-free, #modal-exit, #modal-download').hide();
+        $('#modal-redirect1').show();
+        $('body').addClass('overflow-hidden');
+        $('html').addClass('overflow-hidden');
+        setTimeout(
+          function()
+          {
+            window.open('https://mossman-kuhni.ru/projects', '_blank');
+          }, 5000)
+      }
+    });
+  }
 
 
 });
