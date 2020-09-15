@@ -4,7 +4,7 @@
 
 		<form action="" class="form section-form__container">
 
-			<input type="hidden" name="subject" value="Контакты форма">
+			<input type="hidden" name="subject" value="Зафиксировать условия по акциям">
 
 			<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 			<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">

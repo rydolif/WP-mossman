@@ -37,7 +37,7 @@
 			</p>
 			<form class="modal-consultation__form modal-consultation__form2 form">
 
-				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга landing. mossman-kuhni.ru">
+				<input type="hidden" name="subject" value="5 фатальных ошибок при выборе кухни">
 
 				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
@@ -85,7 +85,7 @@
 						Бесплатно <br>
 						<span>скачайте</span>
 						<br>
-						130 моделей <br>
+						16 моделей <br>
 						кухонь
 				</h2>
 				<p class="modal-consultation__subtitle modal-download__subtitle">
@@ -220,7 +220,7 @@
 			</div>
 			<form class="modal-consultation__form modal-free__form form">
 
-				<input type="hidden" name="subject" value="5 фатальных ошибок при выборе кухни">
+				<input type="hidden" name="subject" value="Расчет с лендинга landing. mossman-kuhni.ru ">
 
 				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
@@ -305,7 +305,7 @@
 
 
 <!-- Виход за поле -->
-<div class="modal-download modal-exit relative" id="modal-exit">
+<div class="modal-download modal-consultation modal-exit relative" id="modal-exit">
 	<div class="modal modal-download__window">
 			<div class="modal-consultation__close modal-download__close" id="modal-exit__close">
 					<i class="fas fa-times-circle"></i>
