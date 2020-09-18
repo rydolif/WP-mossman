@@ -348,7 +348,7 @@
 					</p>
 					<form class="modal-download__form modal-exit__form form">
 
-						<input type="hidden" name="subject" value="5 фатальных ошибок при выборе кухни">
+						<input type="hidden" name="subject" value="Каталог кухонь MOSSMAN">
 						<input type="hidden" name="description" value="Спасибо за доверие! Сертификат на 100 000 на покупку шкафа-купе и файл. «5 фатальных ошибок при выборе кухни» во вложении. Надеемся этот памятка поможет Вам не потерять деньги. Если Вам понадобиться консультация, обращайтесь:">
 
 						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">

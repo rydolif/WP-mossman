@@ -4,9 +4,8 @@
 
 	if ( isset($_POST) ) {
 
-		$to = 'hechashchina@yandex.ru';
-		// $to = 'info@mossman-kuhni.ru';
-		// $to = 'rudolifrudolif@gmail.com';
+		// $to = 'hechashchina@yandex.ru';
+		$to = 'info@mossman-kuhni.ru';
 
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
 		$description = $_POST['description'] ? htmlspecialchars(trim($_POST['description'])) : '';
@@ -44,7 +43,7 @@
 		// -------------Выход----------
 		if ( $email != '' ) {
 			$to = $email;
-			$data .= '<br><p><b>Спасибо за доверие</b>!</p> <p>Сертификат на <a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/ser.jpg" target="_blank">100 000 на покупку шкафа-купе</a> и файл. <a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/Catalog_Mossman_2020.pdf"><b style="font-size: 18px;">«5 фатальных ошибок при выборе кухни»</b></a>. Надеемся этот памятка поможет Вам не потерять деньги.</p>';
+			$data .= '<br><p><b>Спасибо за доверие</b>!</p> <p><a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/Catalog_Mossman_2020.pdf"><b style="font-size: 16px;">Нажмите, чтобы скачать каталог кухонь MOSSMAN</b></a>. <br> Если Вам понадобится консультация, обращайтесь.</p>';
 		}
 
 		if ( $description != '' ) {
