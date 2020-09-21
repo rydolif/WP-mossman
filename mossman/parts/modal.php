@@ -37,7 +37,7 @@
 			</p>
 			<form class="modal-consultation__form modal-consultation__form2 form">
 
-				<input type="hidden" name="subject" value="5 фатальных ошибок при выборе кухни">
+				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга landing.mossman-kuhni.ru">
 
 				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
@@ -111,7 +111,8 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-catalog.png" alt="" class="modal-download__catalog">
 			<form class="modal-download__form modal-download__form2 form" enctype="multipart/form-data">
 
-				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга landing. mossman-kuhni.ru">
+				<input type="hidden" name="subject" value="Каталог кухонь MOSSMAN">
+				<input type="hidden" name="download" value="download">
 
 				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
@@ -348,8 +349,8 @@
 					</p>
 					<form class="modal-download__form modal-exit__form form">
 
-						<input type="hidden" name="subject" value="Каталог кухонь MOSSMAN">
-						<input type="hidden" name="description" value="Спасибо за доверие! Сертификат на 100 000 на покупку шкафа-купе и файл. «5 фатальных ошибок при выборе кухни» во вложении. Надеемся этот памятка поможет Вам не потерять деньги. Если Вам понадобиться консультация, обращайтесь:">
+						<input type="hidden" name="subject" value="5 фатальных ошибок при выборе кухни">
+						<input type="hidden" name="description" value="description">
 
 						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 						<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">

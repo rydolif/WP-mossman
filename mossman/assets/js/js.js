@@ -1104,6 +1104,7 @@ $('#review3')
       submitHandler: function(form) {
         var t = {
           subject: jQuery('.form-' + index).find("input[name=subject]").val(),
+          download: jQuery('.form-' + index).find("input[name=download]").val(),
           
           email: jQuery('.form-' + index).find("input[name=email]").val(),
           name: jQuery('.form-' + index).find("input[name=name]").val(),
