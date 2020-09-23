@@ -47,7 +47,7 @@
 
 				<div class="recommend__line">
 					<p>
-						<button class="top__btn top__btn--active order__button order__button--active">
+						<button class="top__btn top__btn--active order__button order__button--active"  onclick="gtag('event','click',{'event_category':'expert'})">
 							Сэкономьте до 100 000 руб.с бесплатной экспертизой
 						</button>
 					</p>

@@ -43,14 +43,16 @@
 
 		// -------------Выход----------
 		if ( $email != '' ) {
-			$to = $email;
+			$array = array($email, 'rudolifrudolif@gmail.com');
+			$comma_separated = implode(",", $array);
+			$to = $comma_separated;
 
 			if ( $download != '' ) {
-				$data .= '<br><p><b>Спасибо за доверие</b>!</p> <p><a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/Catalog_Mossman_2020.pdf"><b style="font-size: 16px;">Нажмите, чтобы скачать каталог кухонь MOSSMAN</b></a>. <br> Если Вам понадобится консультация, обращайтесь.</p>';
+				$data .= '<br><p><b>Спасибо за доверие</b>!</p> <p><a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/Catalog_Mossman_2020.pdf" target="_blank"><b style="font-size: 16px;">Нажмите, чтобы скачать каталог кухонь MOSSMAN</b></a>. <br> Если Вам понадобится консультация, обращайтесь.</p>';
 			}
 
 			if ( $description != '' ) {
-				$data .= '<b>Спасибо за доверие!</b> <br>Сертификат на 100 000 на покупку шкафа-купе и файл. «5 фатальных ошибок при выборе кухни» во вложении. Надеемся этот памятка поможет Вам не потерять деньги.';
+				$data .= '<b>Спасибо за доверие!</b> <br><a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/ser.jpg" target="_blank">Сертификат на 100 000 на покупку шкафа-купе и файл</a>. <a href="https://landing.mossman-kuhni.ru/wp-content/themes/mossman/assets/5_fatalnykh_oshobok_pri_vybore_kuhni.pdf" target="_blank">«5 фатальных ошибок при выборе кухни»</a> во вложении. Надеемся этот памятка поможет Вам не потерять деньги.';
 			}
 
 		}
@@ -97,7 +99,7 @@
 				<br>\n
 				<hr>\n
 				<br>\n
-				<p><b>Если Вам понадобиться консультация, обращайтесь:</b></p>
+				<p><b>Если Вам понадобится консультация, обращайтесь:</b></p>
 				<p>Торговая сеть «MOSSMAN» </p>
 				<p>Телефон: <a href='tel:+74953695577' style='color: #000;'>+7 (495) 369-55-77</a> </p>
 				<p>E-mail: <a href='mailto:info@mossman-kuhni.ru' style='color: #000;'>info@mossman-kuhni.ru</a></p>

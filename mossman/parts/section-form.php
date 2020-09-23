@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="section-form__block">
-				<button class="section-form__btn">Зафиксировать условия</button>
+				<button class="section-form__btn" onclick="gtag('event','zayavka',{'event_category':'fix'})">Зафиксировать условия</button>
 			</div>
 		</form>
 

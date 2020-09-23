@@ -290,7 +290,7 @@
 				<button class="calc__button" >
 					<?php the_field('calc__btn'); ?>
 				</button>
-				<p class="calc__sub-button">
+				<p class="calc__sub-button"  onclick="gtag('event','click',{'event_category':'hochu'})">
 					<?php the_field('calc__sub-button'); ?>
 				</p>
 			</div>
