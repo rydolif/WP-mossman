@@ -52,8 +52,8 @@
 				</div>
 				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию" onclick="gtag('event','zayavka',{'event_category':'consult'})">
 				<div class="modal__agreement modal-consultation__agreement">
-					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
-						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check">  
+					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active" onclick="ym(51558677,'reachGoal','consult_zayavka')">
+						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check" >  
 					</label>
 					<p>
 						Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
@@ -293,7 +293,7 @@
 							<button class="modal-consultation__button modal-order__button" id="modal-order__submit"  onclick="gtag('event','zayavka',{'event_category':'expert'})">Заказать бесплатную экспертизу <br> и сэкономить до 100 000 руб.</button>
 							<div class="modal__agreement modal-consultation__agreement">
 									<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
-											<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check">  
+											<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check" onclick="ym(51558677,'reachGoal','expert_zayavka')">  
 									</label>
 									<p>
 											Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>

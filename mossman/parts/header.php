@@ -12,7 +12,7 @@
 									<?php the_field('statistics', 'option'); ?>
 							</p>
 							<p class="header__phone">
-									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone"  onclick="gtag('event','click',{'event_category':'tel'})">
+									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone"  onclick="ym(51558677,'reachGoal','tel')">
 										<?php the_field('tel', 'option'); ?>
 									</a>
 							</p>
@@ -24,7 +24,7 @@
 									</a>
 							</p>
 							<p class="header__phone header__consultation">
-									<a href="#" class="modal-consultation_open" onclick="gtag('event','click',{'event_category':'consult'})">
+									<a href="#" class="modal-consultation_open" onclick="ym(51558677,'reachGoal','tel')">
 											<?php the_field('header_consultation_text', 'option'); ?>
 									</a>
 							</p>
@@ -38,7 +38,7 @@
 									<img src="<?php the_field('logo', 'option'); ?>" alt="">
 							</div>
 							<p class="header__text">
-									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone">
+									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone" onclick="ym(51558677,'reachGoal','tel')">
 										<?php the_field('tel', 'option'); ?>
 									</a>
 									<br>

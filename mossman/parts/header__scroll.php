@@ -24,10 +24,10 @@
 			</div>
 			<div class="col-8 col-lg-4 col-xl-5">
 					<div class="header__scroll--contacts  d-flex align-items-center justify-content-end">
-							<p class="header__scroll--consultation" onclick="gtag('event','click',{'event_category':'consult'})">
+							<p class="header__scroll--consultation" onclick="ym(51558677,'reachGoal','consult_click')">
 								<?php the_field('header_consultation_text', 'option'); ?>
 							</p>
-							<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__scroll--phone" onclick="gtag('event','click',{'event_category':'tel'})">
+							<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__scroll--phone" onclick="ym(51558677,'reachGoal','tel')">
 								<?php the_field('tel', 'option'); ?>
 							</a>
 							<div class="header__burger--wrapper">

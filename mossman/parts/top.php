@@ -15,7 +15,7 @@
 								<?php the_field('hero_guarantee'); ?>
 							</p>
 							<a href="#calc" class="top__btn--wrapper">
-									<button class="top__btn" onclick="gtag('event','click',{'event_category':'calk'})">
+									<button class="top__btn" onclick="ym(51558677,'reachGoal','kat_click')">
 										<?php the_field('hero_btn'); ?>
 									</button>
 							</a>
