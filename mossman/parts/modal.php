@@ -50,9 +50,9 @@
 				<div class="relative">
 					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
 				</div>
-				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию" onclick="gtag('event','zayavka',{'event_category':'consult'})">
+				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию" onclick="ym(51558677,'reachGoal','consult_zayavka'); return true;">
 				<div class="modal__agreement modal-consultation__agreement">
-					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active" onclick="ym(51558677,'reachGoal','consult_zayavka')">
+					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
 						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check" >  
 					</label>
 					<p>
@@ -125,7 +125,7 @@
 				<div class="relative">
 					<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
 				</div>
-				<input type="submit" class="modal-download__btn" id="modal-download__btn" value="Получить на почту"  onclick="gtag('event','zayavka',{'event_category':'kat'})">
+				<input type="submit" class="modal-download__btn" id="modal-download__btn" value="Получить на почту" onclick="ym(51558677,'reachGoal','kat_zayavka'); return true;">
 			</form> 
 			<div class="modal-download__social">
 					<a href="#" class="modal-download__viber">
@@ -233,7 +233,7 @@
 				<div class="relative">
 					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
 				</div>
-				<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно"  onclick="gtag('event','zayavka',{'event_category':'hochu'})">
+				<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно" onclick="ym(51558677,'reachGoal','hochu_zayavka'); return true;">
 				<div class="modal__agreement modal-consultation__agreement">
 					<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
 						<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check">
@@ -290,10 +290,10 @@
 							<div class="relative">
 								<input type="tel" class="modal-consultation__input modal-order__input modal__phone" id="order__phone" name="phone" placeholder="+7 (___) ___ __ __" required>
 							</div>
-							<button class="modal-consultation__button modal-order__button" id="modal-order__submit"  onclick="gtag('event','zayavka',{'event_category':'expert'})">Заказать бесплатную экспертизу <br> и сэкономить до 100 000 руб.</button>
+							<button class="modal-consultation__button modal-order__button" id="modal-order__submit" onclick="ym(51558677,'reachGoal','expert_zayavka'); return true;">Заказать бесплатную экспертизу <br> и сэкономить до 100 000 руб.</button>
 							<div class="modal__agreement modal-consultation__agreement">
 									<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
-											<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check" onclick="ym(51558677,'reachGoal','expert_zayavka')">  
+											<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check" >  
 									</label>
 									<p>
 											Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>

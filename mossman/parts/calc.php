@@ -287,10 +287,10 @@
 				<p class="calc__attraction">
 					<?php the_field('calc__attraction'); ?>
 				</p>
-				<button class="calc__button" >
+				<button class="calc__button" onclick="ym(51558677,'reachGoal','hochu_click'); return true;">
 					<?php the_field('calc__btn'); ?>
 				</button>
-				<p class="calc__sub-button"  onclick="ym(51558677,'reachGoal','hochu_click')">
+				<p class="calc__sub-button"  >
 					<?php the_field('calc__sub-button'); ?>
 				</p>
 			</div>

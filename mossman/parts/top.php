@@ -14,10 +14,10 @@
 							<p class="top__year">
 								<?php the_field('hero_guarantee'); ?>
 							</p>
-							<a href="#calc" class="top__btn--wrapper">
-									<button class="top__btn" onclick="ym(51558677,'reachGoal','kat_click')">
+							<a href="#calc" class="top__btn--wrapper" onclick="ym(51558677,'reachGoal','calc'); return true;">
+									<span class="top__btn">
 										<?php the_field('hero_btn'); ?>
-									</button>
+									</span>
 							</a>
 							<p class="top__action">
 									<span class="top__orange">
