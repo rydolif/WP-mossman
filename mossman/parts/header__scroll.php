@@ -24,10 +24,10 @@
 			</div>
 			<div class="col-8 col-lg-4 col-xl-5">
 					<div class="header__scroll--contacts  d-flex align-items-center justify-content-end">
-							<p class="header__scroll--consultation" onclick="ym(51558677,'reachGoal','consult_click'); return true;">
+							<p class="header__scroll--consultation" onclick="ga('send', 'event', 'consult', 'click'); ym(51558677,'reachGoal','consult_click'); return true;">
 								<?php the_field('header_consultation_text', 'option'); ?>
 							</p>
-							<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__scroll--phone" onclick="ym(51558677,'reachGoal','tel'); return true;">
+							<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__scroll--phone" onclick="ga('send', 'event', 'tel', 'click'); ym(51558677,'reachGoal','tel'); return true;">
 								<?php the_field('tel', 'option'); ?>
 							</a>
 							<div class="header__burger--wrapper">

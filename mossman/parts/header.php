@@ -12,7 +12,7 @@
 									<?php the_field('statistics', 'option'); ?>
 							</p>
 							<p class="header__phone">
-									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone" onclick="ym(51558677,'reachGoal','tel'); return true;">
+									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone" onclick="ga('send', 'event', 'tel', 'click'); ym(51558677,'reachGoal','tel'); return true;">
 										<?php the_field('tel', 'option'); ?>
 									</a>
 							</p>
@@ -24,7 +24,7 @@
 									</a>
 							</p>
 							<p class="header__phone header__consultation">
-									<a href="#" class="modal-consultation_open" onclick="ym(51558677,'reachGoal','consult_click'); return true;">
+									<a href="#" class="modal-consultation_open" onclick="ga('send', 'event', 'consult', 'click'); ym(51558677,'reachGoal','consult_click'); return true;">
 											<?php the_field('header_consultation_text', 'option'); ?>
 									</a>
 							</p>
@@ -38,7 +38,7 @@
 									<img src="<?php the_field('logo', 'option'); ?>" alt="">
 							</div>
 							<p class="header__text">
-									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone" onclick="ym(51558677,'reachGoal','tel'); return true;">
+									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone" onclick="ga('send', 'event', 'tel', 'click'); ym(51558677,'reachGoal','tel'); return true;">
 										<?php the_field('tel', 'option'); ?>
 									</a>
 									<br>

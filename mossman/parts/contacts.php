@@ -24,10 +24,10 @@
 				<p class="contacts__text">
 					<?php the_field('time-work', 'option'); ?>
 				</p>
-				<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="contacts__link contacts__phone" onclick="ym(51558677,'reachGoal','tel'); return true;">
+				<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="contacts__link contacts__phone" onclick="ga('send', 'event', 'tel', 'click'); ym(51558677,'reachGoal','tel'); return true;">
 					<?php the_field('tel', 'option'); ?>
 				</a>
-				<a href="mailto:<?php the_field('mail', 'option'); ?>" class="contacts__link" onclick="ym(51558677,'reachGoal','mail'); return true;">
+				<a href="mailto:<?php the_field('mail', 'option'); ?>" class="contacts__link" onclick="ga('send', 'event', 'mail', 'click'); ym(51558677,'reachGoal','mail'); return true;">
 					<p><?php the_field('mail', 'option'); ?></p>
 				</a>
 				<div class="contacts__social">

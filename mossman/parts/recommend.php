@@ -47,7 +47,7 @@
 
 				<div class="recommend__line">
 					<p>
-						<button class="top__btn top__btn--active order__button order__button--active" onclick="ym(51558677,'reachGoal','expert_click'); return true;">
+						<button class="top__btn top__btn--active order__button order__button--active" onclick="ga('send', 'event', 'expert', 'click'); ym(51558677,'reachGoal','expert_click'); return true;">
 							Сэкономьте до 100 000 руб.с бесплатной экспертизой
 						</button>
 					</p>

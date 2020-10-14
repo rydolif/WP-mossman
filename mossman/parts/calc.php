@@ -287,7 +287,7 @@
 				<p class="calc__attraction">
 					<?php the_field('calc__attraction'); ?>
 				</p>
-				<button class="calc__button" onclick="ym(51558677,'reachGoal','hochu_click'); return true;">
+				<button class="calc__button" onclick="ga('send', 'event', 'hochu', 'click'); ym(51558677,'reachGoal','hochu_click'); return true;">
 					<?php the_field('calc__btn'); ?>
 				</button>
 				<p class="calc__sub-button"  >
